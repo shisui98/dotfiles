@@ -1,0 +1,8 @@
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+TEXT
+RAM:$memperc% | CPU:${cpu} | ${fs_used /} / ${fs_size /} | ${downspeed enp0s3}/s ${upspeed enp0s3}/s | ${exec amixer get Master -M | grep -oE -m1 "[[:digit:]]*%"} Volume |
+# Up:${uptime_short} |${addr enp0s3} |RAM:$memperc% |CPU:${cpu} |${fs_used /} / ${fs_size /} | ${downspeed enp0s3}/s ${upspeed enp0s3}/s | MPD ${hr 2} Now Playing: ${mpd_artist} - ${mpd_title} ${mpd_elapsed} / ${mpd_length}
